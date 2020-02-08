@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="customer_columns" class="Magento\Customer\Ui\Component\Listing\Columns" >
+        <column name="last_login" class="Elightwalk\CustomerGrid\Ui\Component\Listing\Column\LastLogin" component="Magento_Ui/js/grid/columns/date" sortOrder="90">
+            <settings>
+                <dataType>date</dataType>
+                <label translate="true">Customer Last Login</label>
+                <sortable>false</sortable>
+                <filter>false</filter>
+            </settings>
+        </column>
+        <column name="total_orders" class="Elightwalk\CustomerGrid\Ui\Component\Listing\Column\TotalOrders" sortOrder="90">
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Total Orders</label>
+                <sortable>false</sortable>
+                <filter>false</filter>
+            </settings>
+        </column>
+    </columns>
+</listing>
